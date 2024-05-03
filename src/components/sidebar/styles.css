@@ -1,0 +1,5 @@
+.sidebar {
+    background-image: linear-gradient(from top, var(--main-color), var(--main-stronger-color));
+    display: flex;
+    height: 100%;
+}
