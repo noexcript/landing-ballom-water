@@ -1,14 +1,16 @@
 .button {
     color: var(--main-color);
-    border: 1px solid var(--main-color);
-    padding: 5px 15px;
-    border-radius: 15px;
+    border: 2px solid var(--main-color);
+    padding: 10px 30px;
+    border-radius: 50px;
     width: fit-content;
     transition: all .6s ease-in-out;
     cursor: pointer;
+    font-size: 18px;
+    background-color: transparent;
 
     &:hover {
-        background-color: var(--main-color);
+        background-color: var(--main-stronger-color);
         color: #fff;
     }
 

@@ -1,10 +1,9 @@
+import Navbar from "../navbar";
 import "./styles.css";
 import React from "react";
 
-function mainContentMain() {
-  return <div className="main-content">
-    
-  </div>;
+function MainContentMain({ children }) {
+  return <div className="main-content-main">{children}</div>;
 }
 
-export default mainContentMain;
+export default MainContentMain;
