@@ -5,7 +5,7 @@ import background from "../../assets/background.png";
 function Background() {
   return (
     <div className="background">
-      <img src={background} alt="background-overlay" />
+      <img src={background} alt="background-overlay" /> 
     </div>
   );
 }

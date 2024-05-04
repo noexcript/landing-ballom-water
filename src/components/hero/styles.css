@@ -1,0 +1,16 @@
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .hero-welcome{
+        color: #e9e8e8;
+        
+    }
+    .hero-title{
+        font-size: 100px;
+        color: #e9e8e8;
+    }
+    .button{
+        margin-top: 20px;
+    }
+}
