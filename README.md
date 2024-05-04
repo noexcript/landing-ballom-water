@@ -1,4 +1,4 @@
-# Landing Page Build React + Vite
+# Landing Page With React + Vite
 
 > To install on your localhost just run the follow command
 
