@@ -10,7 +10,7 @@ function Hero() {
         World's <br />
         Creative Studio
       </h4>
-      <Button text="Take tour" />
+      <Button text="Take a tour" />
     </div>
   );
 }

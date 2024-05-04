@@ -5,6 +5,7 @@ import MainContentMain from "./components/main-content-main";
 import Navbar from "./components/navbar";
 import Sidebar from "./components/sidebar";
 import Hero from "./components/hero";
+import Bubbles from "./components/bubbles";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </MainContentMain>
         <Sidebar />
       </MainContent>
+      <Bubbles />
     </>
   );
 }
