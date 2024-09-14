@@ -1,4 +1,4 @@
-name: CI/CD for react landing page
+name: CI/CD for React Landing Page
 
 on:
   push:
@@ -13,39 +13,34 @@ jobs:
         uses: actions/checkout@v3
       
       - name: Install Node
-      - uses: actions/setup@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 18.x
       
       - name: Install Dependencies
-        run: |
-           npm install
-
+        run: npm install
+      
       - name: Build Project
-        run: |
-          npm run build
+        run: npm run build
       
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v3
         with:
-          name: production file
+          name: production-file
           path: ./build
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: production-file
+          path: ./build
 
-deploy:
-  
-  needs: build
-
-  runs-on: ubuntu-latest
-  steps: 
-    - name: Download artifact
-      uses: actions/download-artifact@v3
-      with:
-        name: production file
-        path: ./build
-
-    - name: Deploy to Github Pages
-      uses:  peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secret.KEY }}
-        publish_dir: ./build
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.KEY }}
+          publish_dir: ./build
