@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://{your github id }.github.io/{repo name}/",
+  "homepage": "https://noexcript.github.io/landing-ballom-water/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
